@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de Funcionários</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+</head>
+
+<body>
+    <div id="content">
+        <a href="index.html"> <img src="Ficha_de_EPI_arquivos/image002.png" alt=""> </a>
+        <h1>Controle de EPI</h1>
+    </div>
+    <div id="content" style="text-align: center;">
+        <h1>Cadastro de Funcionários</h1>
+    </div>
+    <div id="content">
+        <form action="ControllerServlet" method="post">
+            <fieldset id="login">
+                <legend><span>Dados Pessoais</span></legend>
+                <ol>
+                    <li>
+                        <label for="nome" title="Informe Nome"> Nome Completo:<span>*</span></label><input type="text" name="name">
+                    </li>
+                    <li>
+
+                        <label for="cpf" title="Informe CPF"> CPF:<span>*</span></label><input type="text" name="cpf">
+                    </li>
+
+                </ol>
+            </fieldset>
+            <fieldset id="login">
+                <legend><span>Técnico Segurança</span></legend>
+                <ol>
+                    <li>
+                        <label for="login" title="Informe Login"> Login:<span></span></label><input type="text" name="login">
+                    </li>
+                    <li>
+                        <label for="password" title="Informe Senha"> Senha:<span></span></label><input type="password" name="psw">
+                    </li>
+
+                </ol>
+            </fieldset>
+            <fieldset>
+                <input type="hidden" name="ac" value="create"></input>
+                <input type="submit" value="Cadastrar"></input>
+                <a href="index.html"> Cancelar</a>
+            </fieldset>
+
+        </form>
+    </div>
+    <div id="footer">
+        <span> &copy Aluno: Erikson Luigi Krauss Lino - Licenciatura em Computação (IFTO)<br> 
+            Disciplina:Programação Web. Prof. Marcos Dias
+            </span>
+    </div>
+    <script src="assets/js/cpf.js"></script>
+</body>
+
+</html>
