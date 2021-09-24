@@ -60,30 +60,31 @@ legend {
 
 #login li {
     position: relative;
-    padding-bottom: 1em;
-    line-height: 3.4em;
+    padding-bottom: 0.5em;
+    line-height: 1.4em;
 }
 
 .required {
-    background: transparent;
+    background: rgb(92, 192, 205);
 }
 
 #login label {
     position: relative;
     clear: left;
     float: left;
-    font-size: 1.5em;
-    width: 15em;
-    margin-right: 30px;
-    padding-right: 30px;
+    font-size: 1.25em;
+    width: 10em;
+    margin-right: 15px;
+    padding-right: 15px;
     line-height: 2em;
     text-align: right;
 }
 
 #login input {
     text-transform: uppercase;
+    text-align: center;
     font-size: 1.5em;
-    margin-right: 120px;
+    margin-right: 5px;
     padding-right: 5px;
     font-size: 1.5em;
     border: 1px solid #431fe2;
@@ -93,25 +94,22 @@ legend {
 
 input {
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-right: 25px;
     padding-right: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     border: 1px solid #431fe2;
-    color: #ffffff;
-    background: #2643c4;
 }
 
-
-/*Configurações Padrões*/
-
-ul.menu,
-.menu li,
-.menu a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+tr {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-right: 25px;
+    padding-right: 5px;
+    font-size: 1em;
+    border: 1px solid #431fe2;
+    color: #020000;
+    background: #fbfbfc;
 }
 
 ul.menu ul {
@@ -121,10 +119,10 @@ ul.menu ul {
 }
 
 
-/* Configurações nivel 1*/
+/* Configurações menus*/
 
 ul.menu {
-    float: left;
+    float: none;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 15px;
     border-radius: 5px;
@@ -139,15 +137,15 @@ ul.menu {
 
 .menu li a {
     display: block;
-    padding: 0 20px;
-    line-height: 45px;
-    height: 45px;
+    padding: 0 30px;
+    line-height: 30px;
+    height: 50px;
     float: left;
     transition: all 0.1s linear;
 }
 
 
-/* Configurações nivel 2*/
+/* Configurações nivel 1*/
 
 .menu li:hover>ul.submenu-1 {
     display: block;
@@ -155,11 +153,11 @@ ul.menu {
     left: 0;
     padding: 5px;
     width: 200px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 1px 1px;
 }
 
 .menu ul.submenu-1 a {
-    width: 160px;
+    width: 145px;
     padding: 0 20px;
     border-radius: 5px;
 }
@@ -207,7 +205,7 @@ ul.menu {
 /*nivel 1*/
 
 .menu {
-    background: #CCC;
+    background: rgb(110, 94, 204);
 }
 
 .menu a {
@@ -215,7 +213,7 @@ ul.menu {
 }
 
 .menu li:hover>a {
-    background: #999;
+    background: rgb(73, 57, 219);
     color: #fff;
 }
 
@@ -223,7 +221,7 @@ ul.menu {
 /*nivel 2*/
 
 .submenu-1 {
-    background: #999;
+    background: rgb(110, 94, 204);
 }
 
 .submenu-1 a {
@@ -231,14 +229,14 @@ ul.menu {
 }
 
 .submenu-1 li:hover>a {
-    background: #666;
+    background: rgb(73, 57, 219);
 }
 
 
 /*nivel 3*/
 
 .submenu-2 {
-    background: #666;
+    background: rgb(110, 94, 204);
 }
 
 .submenu-2 a {
@@ -246,22 +244,7 @@ ul.menu {
 }
 
 .submenu-2 li:hover>a {
-    background: #333;
-}
-
-
-/*nivel 3*/
-
-.submenu-3 {
-    background: #333;
-}
-
-.submenu-3 a {
-    color: #fff;
-}
-
-.submenu-3 li:hover>a {
-    background: #000;
+    background: rgb(73, 57, 219);
 }
 
 
@@ -272,6 +255,7 @@ ul.menu {
     z-index: 9000;
     background-color: #000;
     display: none;
+    align-content: center;
 }
 
 #boxes .window {
@@ -281,21 +265,6 @@ ul.menu {
     display: none;
     z-index: 9999;
     padding: 20px;
-}
-
-
-/* Personalize a janela modal aqui. Você pode adicionar uma imagem de fundo. */
-
-#boxes #dialog {
-    width: 375px;
-    height: 203px;
-    object-position: center;
-}
-
-
-/* posiciona o link para fechar a janela */
-
-.close {
-    display: block;
-    text-align: right;
+    align-items: center;
+    align-content: center;
 }
