@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrap-content {
+    display: flex;
+}
+
+.board-sign {
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(125deg, #0c44a7cb, #4284f3);
+    color: #ffffff;
+    position: fixed;
+    /* aside com position fixed */
+}
+
+.account-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    padding-top: 3em;
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+}
+
+.account-block a {
+    display: block;
+    margin-top: 30px;
+    border: 1px solid #ffffff;
+    padding: 1.4rem;
+    width: 160px;
+    outline: none;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.account-block a:hover {
+    background-color: #ffffff;
+    color: #222222;
+    text-decoration: underline;
+}
+
+.svg-block img {
+    display: block;
+    width: 350px;
+    margin: 0 auto
+}
+
+.account-block h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.signup_block {
+    width: 100%;
+    margin-left: 30%;
+    /* margin-left com a largura do aside para voltar o conteúdo pro mesmo local */
+}
+
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 3em 3em;
+}
+
+.container img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup_block h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.title-wrap::after {
+    display: block;
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #6e9ef1;
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px #222222 solid;
+    padding: 0.5em 0.5em;
+    margin: 10px 0;
+}
+
+.form-info {
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color: #4284f3;
+}
+
+form fieldset label {
+    display: flex;
+    margin-top: 10px;
+}
+
+form fieldset input {
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+}
+
+.input {
+    width: 50%;
+}
+
+.input:focus {
+    border: 1px solid #222222;
+}
+
+.radio_label {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.select {
+    padding: 0.5em 0.5em;
+}
+
+#btn-cadastrar {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    background-color: #446399;
+    padding: 0.8rem;
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#btn-cadastrar:hover {
+    background: linear-gradient(120deg, #1050bdcb, #a5c5f1);
+}

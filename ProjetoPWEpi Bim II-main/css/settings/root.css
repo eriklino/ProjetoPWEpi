@@ -1,0 +1,25 @@
+body {
+    background: url(../../img/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: helvetica, arial, sans-serif;
+    height: 100vh;
+    color: var(--preto);
+    background: rgb(69, 52, 219);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgb(34, 34, 192) 35%, rgb(19, 10, 196) 50%);
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+}
+
+:root {
+    --azulescuro: #4284f3;
+    --azulbg: #93b6f1cb;
+    --branco: #ffffff;
+    --preto: #000000;
+    --azulclaro: #a7bee6;
+}
